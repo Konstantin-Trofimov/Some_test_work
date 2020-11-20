@@ -1,0 +1,79 @@
+.main {
+    padding: 37px 0 83px 0;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &__wrapper {
+        width: 100%;
+        margin: 0 130px;
+        
+    }
+    &__menu {
+        display: grid;
+        grid-template-columns: 160px 253px;
+        column-gap: 48px;
+
+        &-title {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: #000000;
+        }
+
+        &-wrapper {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &-age, &-price {
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                opacity: .7;
+            }
+
+            span {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                color: #000000;
+            }
+
+            img {
+                margin-left: 14px;
+            }
+        }
+    }
+
+    &__cards {
+        margin-top: 38px;
+        display: grid;
+        grid-template: repeat(2, 521px) / repeat(3, 380px);
+        row-gap: 27px;
+        grid-auto-columns: repeat(3, 380px);
+        grid-auto-rows: repeat(2, 521px);
+        column-gap: 27px;
+        
+    }
+
+    &__btn {
+        display: block;
+        margin: 68px auto 0;
+        padding: 24px 129px;
+        border: 1px solid #CACACA;
+        border-radius: 10px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        background-color: #ffff;
+
+        &:hover {
+            box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+        }
+    }
+}
