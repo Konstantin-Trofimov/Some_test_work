@@ -1,0 +1,146 @@
+.card {
+    position: relative;
+    height: 521px;
+    margin-bottom: 27px;
+
+    &-img{ 
+        width: 100%;
+        height: 264px;
+    }
+
+    &-info {
+        width: 100%;
+        background: #F3F3F3;
+    }
+
+    &-info {
+        padding: 29px 40px 29px 29px;
+        
+
+        &__title {
+            height: 29px;
+            font-weight: bold;
+            font-size: 24px;
+            color: #000000;
+        }
+
+        &__wrapper {
+            width: 267px;
+            height: 32px;
+            position: relative;
+            margin-left: 22px;
+           
+            margin-top: 18px;
+            
+           
+            display: flex;
+           
+
+            &:before {
+                content: '';
+                position: absolute;
+                height: 26px;
+                width: 4px;
+                background: $main;
+                left: -22px;
+                top: 2px;
+            }
+        }
+
+        &__subtitle {
+            width: 89px;
+            font-weight: normal;
+            font-size: 12px;
+            color: #000000;
+        }
+
+        &__age-val, &__descr-val {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 20px;
+            color: #000000;
+        }
+
+        &__subtitle,     &__age,  &__descr{
+            height: 100%;
+        }
+
+        &__age {
+            margin-left: 18px;
+            width: 71px;
+        }
+
+        &__descr {
+            margin-left: 20px;
+            width: 69px;
+        }
+
+        &__price {
+            height: 29px;
+            margin-top: 18px;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: #000000;
+        }
+    }
+
+    &-btn {
+        cursor: pointer;
+        width: 100%;
+        height: 65px;
+        padding: 22px 55px;
+        border: none;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #FFFFFF;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+
+        &_active {
+            background: $main;
+
+            &:hover {
+                box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.5); 
+            }
+        }
+
+        &_disabled {
+            background: $dark;
+        }  
+    }
+
+    &-discount {
+        position: absolute;
+        top: 34px;
+        left: 38px;
+        padding: 10px;
+        width: 78px;
+        height: 39px;
+        font-weight: normal;
+        font-size: 16px;
+        color: #FFFFFF;
+        background: #E62D2D;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    &-like {
+        cursor: pointer;
+        position: absolute;
+        right: 32px;
+        top: 34px;
+        width: 46px;
+        height: 46px;
+        transition: all .8s;
+        background-repeat: no-repeat;
+
+        &:hover {
+            background: url(../assets/icons/liked.svg);
+            background-repeat: no-repeat;
+        }
+    }
+
+}

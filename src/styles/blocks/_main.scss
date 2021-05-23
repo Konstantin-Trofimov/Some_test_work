@@ -1,0 +1,86 @@
+.main {
+    padding: 37px 0 83px 0;
+    margin: 0 auto;
+    &__wrapper {
+        width: 100%;
+  
+    }
+    &__menu {
+        display: flex;
+        width: 460px;
+        justify-content: space-between;
+
+        &-title {
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 22px;
+            color: #000000;
+        }
+
+        &-wrapper {
+            width: 253px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-price {
+            width: 76px;
+        }
+        &-age {
+            width: 119px;
+        }
+        &-age, &-price {
+            cursor: pointer;
+            display: flex;
+
+            &:hover {
+                opacity: .7;
+            }
+
+            span {
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                color: #000000;
+            }
+
+            img {
+                margin-left: 14px;
+            }
+        }
+    }
+
+    
+
+    &__cards {
+        max-width: 1180px;
+        margin-top: 38px;
+        display: grid;
+        grid-template: 548px 548px / 380px 380px 380px;
+        column-gap: 21px;
+        display: -ms-flexbox;
+        -ms-flex-wrap: wrap;
+        -ms-flex-flow: row wrap;
+        -ms-box-orient: horizontal;
+        -ms-flex-pack: justify;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+
+    &__btn {
+        display: block;
+        margin: 41px auto 0;
+        padding: 24px 129px;
+        border: 1px solid #CACACA;
+        border-radius: 10px;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        background-color: #ffff;
+
+        &:hover {
+            box-shadow: -3px 0px 40px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(164, 164, 164, 0.03);
+        }
+    }
+}
